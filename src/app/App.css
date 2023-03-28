@@ -1,0 +1,132 @@
+.App{
+    background-color: #2f2f2f;
+    height:100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    font-size: 35px;
+}
+.header-ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    margin-right: auto;
+    height:90px;
+
+}
+.currency{
+    font-weight: 700;
+    margin-right: 15px;
+}
+.header-ul>li{
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+}
+.header-ul>li:not(:last-child){
+    margin-right: 20px;
+}
+.header{
+    width:980px;
+    height:100px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.main{
+    background-color: #fff;
+    width:980px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main>img{
+    width:100px;
+}
+
+.select{
+    font-size: 50px;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+.selectContainer{
+    padding:110px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input{
+    width:200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #2f2f2f;
+    border:none;
+    color:white;
+    font-size: 40px;
+    padding-left:20px ;
+}
+.main > .selectContainer{
+    height: 25%;
+}
+.explanation{
+    text-align: center;
+    max-width: 1200px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+}
+
+.lds-dual-ring {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.4);
+
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    top:10%;
+    height: 150px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
